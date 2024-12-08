@@ -1,9 +1,9 @@
 /*
-    naam:
+    naam: Renzo Vanmel 1TIN e
 */
 
 /*
-Hint: 
+Hint:
     (1) Omzetten naar hoofdletters:
             text-transform: uppercase;
     (2) Schaduw in figcaption
@@ -11,8 +11,178 @@ Hint:
     (3) Eerste 3 lijnen tonen van de paragrafen
             line-height:1em;
 	        height:3em;
-    (4) Herschaling van de figuren 
+    (4) Herschaling van de figuren
             aspect-ratio: 400 / 225;
         s    object-fit:cover;
 */
+* {
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
 
+body {
+    width: 70%;
+    margin-inline: auto;
+}
+
+header {
+    text-transform: uppercase;
+    border-bottom: 2px solid orange;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+header h2 {
+    font-size: 2em;
+    margin: 0;
+    padding-left: 0.5em;
+    border-left: 5px solid orange;
+    padding-top: 10px;
+}
+
+main .article1{
+    width: 60%;
+    float:left;
+    margin: 25px;
+}
+
+main .article1 img {
+    position: relative;
+    flex: 0 0 60%;
+    width: 225px;
+    height: 400px;
+    float: left;
+}
+
+.article2 .article3 {
+    position: relative;
+    float: left;
+    width: 20%;
+}
+.article4 .article5 .article6 {
+    position: relative;
+    float: left;
+    width: 30%;
+}
+
+.article2 .article3 .article4 .article5 .article6 p {
+    line-height: 1em;
+    height: 3em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+nav {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 250px;
+    background-color: white;
+    border: 5px solid Orange;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1.4em;
+    list-style: none;
+    z-index: 999;
+
+}
+
+nav span{
+    display:none;
+}
+
+.titel_kader {
+    display: flex;
+    align-items: center;
+    background: orange;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-bottom: 15px;
+}
+
+nav ul li img {
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    aspect-ratio: 400 / 225;
+    object-fit:cover;
+}
+
+nav ul li input[type="text"] {
+    width: 100px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+nav ul li input[type="text"] + img {
+    margin-left: 5px;
+    width: 20px;
+    height: 20px;
+    aspect-ratio: 400 / 225;
+    object-fit:cover;
+}
+
+main img {
+    border-radius: 10px;
+    position: relative;
+    width: 400px;
+    height:225px;
+    color:white;
+    aspect-ratio: 400 / 225;
+}
+
+img {
+    border-radius: 10px;
+    position: relative;
+    text-allign: center;
+    color:white;
+    aspect-ratio: 400 / 225;
+    object-fit:cover;
+}
+
+figcaption {
+    position: absolute;
+    color: white;
+    bottom: 10px;
+    right: 15px;
+    text-shadow: 2px 2px 2px black;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: orange;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1em;
+}
+
+.container {
+    display: flex;
+}
+
+.container > div {
+    width: 30%;
+}
