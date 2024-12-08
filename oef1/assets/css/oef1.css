@@ -153,7 +153,6 @@ main img {
 img {
     border-radius: 10px;
     position: relative;
-    text-allign: center;
     color:white;
     aspect-ratio: 400 / 225;
     object-fit:cover;
