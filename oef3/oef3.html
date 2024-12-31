@@ -1,14 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- naam:              -->
+<!-- naam:Renzo Vanmal-->
 <head>
     <meta charset="UTF-8">
     <title>Oef3</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/css/oef3.css">
 </head>
 <body>
 <h1>Mussen vs Vinken</h1>
+<form action="waarneming.html" method="get">
+    <fieldset>
+        <legend>Algemeen</legend>
+        <div class="input-group">
+            <label for="datum"><b>Datum:</b></label>
+            <input type="date" id="datum" name="datum">
+        </div>
+        <div class="input-group">
+            <label for="tijd"><b>Tijd:</b></label>
+            <select id="tijd" name="tijd">
+                <option value="0_6">0u - 6u</option>
+                <option value="6_12">6u - 12u</option>
+                <option value="12_18">12u - 18u</option>
+                <option value="18_24">18u - 24u</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label><b>Neerslag:</b></label>
+            <input type="radio" name="neerslag" value="geen" checked> geen
+            <input type="radio" name="neerslag" value="matig"> matig
+            <input type="radio" name="neerslag" value="overvloedig"> overvloedig
+        </div>
+    </fieldset>
 
-</body>
-</html>
+    <fieldset>
+        <legend>Vogels</legend>
+        <img src="assets/images/mus.png" alt="foto van mus">
+        <div class="input-group">
+            <label for="mussen">#Mussen:</label>
+            <input type="number" id="mussen" name="aantal_mus" min="0" max="10" value="0">
+            <label class="slider">zeker:</label>
+            <input type="range" name="zekerheid_mus" min="0" max="100" value="50">
+        </div>
+        <img src="assets/images/vink.png" alt="vink">
+        <div class="input-group">
+            <label for="vinken">#Vinken:</label>
+            <input type="number" id="vinken" name="aantal_vink" min="0" max="10" value="0">
+            <label class="slider">zeker:</label>
+            <input type="range" name="zekerheid_vink" min="0" max="100" value="50">
+        </div>
+    </fieldset>
+
+    <fieldset class="actions">
+        <legend>Acties</legend>
+        <button type="submit">registreer</button>
+        <button type="reset">maak leeg</button>
+    </fieldset>
+</form>

@@ -1,3 +1,50 @@
-/* naam: 
+/* naam: Renzo Vanmal */
+body {
+    margin-left: 200px;
+}
+form {
+    width: 900px;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+fieldset {
+    margin-bottom: 20px;
+    border: 1px solid #aaa;
+}
+legend {
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    padding: 2px;
+}
+.actions button {
+    width: 200px;
+    padding: 10px;
+    margin: 10px 10px 0 0;
+    background-color: #2c61a6;
+    color: white;
+    border: none;
+}
+.actions button:hover {
+    background-color: #1b4478;
+}
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.input-group label {
+    width: 100px;
+}
+.slider {
+    margin-left: 20px;
+}
+img {
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    border: 1px grey solid;
+    padding: 2px;
+}
 
-*/
+
+
